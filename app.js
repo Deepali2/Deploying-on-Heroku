@@ -13,6 +13,6 @@ app.get("/about", function(req, res) {
   res.render("about");
 });
 
-app.listen(3000, function() {
-  console.log("I am listening on port 3001");
+app.listen(process.env.PORT || 3000, function() {
+  console.log("I am listening on port 3000");
 });
